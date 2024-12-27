@@ -3,79 +3,81 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>STUDENTHUB</title>
+  <title>NXTGEN - Learn Telugu & Maths</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Header -->
+  <!-- Header Section -->
   <header>
-    <h1>STUDENTHUB</h1>
+    <div class="logo">NXT Wave</div>
+    <div class="profile-pic">
+      <img src="profile.jpg" alt="Profile Picture" />
+    </div>
   </header>
 
-  <!-- Navigation Menu -->
-  <nav class="menu">
-    <a href="#home" onclick="showPage('home')">Home</a>
-    <a href="#quiz" onclick="showPage('quiz')">Quiz</a>
-    <a href="#redeem" onclick="showPage('redeem')">Redeem</a>
-    <a href="#profile" onclick="showPage('profile')">Menu</a>
-  </nav>
+  <!-- Home Section -->
+  <section id="home">
+    <h1>Welcome to NXTGEN</h1>
+    <p>Learn Telugu and Mathematics Online!</p>
+    <h2>Parent and Student Reviews</h2>
+    <div class="reviews">
+      <p>"Great platform for learning Telugu and Maths!" - Parent A</p>
+      <p>"My child loves the classes and the books." - Parent B</p>
+    </div>
+    <h3>Contact Us:</h3>
+    <p>WhatsApp: <a href="https://wa.me/919014248652">+91 9014248652</a></p>
+    <p>Email: <a href="mailto:nxtwaveinatitute045@gmail.com">nxtwaveinatitute045@gmail.com</a></p>
+  </section>
 
-  <!-- Pages -->
-  <main>
-    <!-- Home Page -->
-    <section id="home" class="page">
-      <h2>Past Question Papers</h2>
-      <ul class="categories">
-        <li>JEE Main</li>
-        <li>JEE Advanced</li>
-        <li>TS EAMCET</li>
-        <li>AP EAMCET</li>
-        <li>KCET</li>
-        <li>UPSC Mains</li>
-        <li>UPSC Prelims</li>
-        <li>Group 1, 2, 3, 4 PYQs</li>
-        <li>Other PYQs</li>
-      </ul>
-    </section>
+  <!-- Courses Section -->
+  <section id="courses">
+    <h2>Online Courses</h2>
+    <h3>Telugu Classes</h3>
+    <ul>
+      <li>5 Classes/Week - $85</li>
+      <li>3 Classes/Week - $70</li>
+    </ul>
+    <h3>Maths Classes</h3>
+    <ul>
+      <li>4 Classes/Week - $85</li>
+      <li>3 Classes/Week - $65</li>
+    </ul>
+  </section>
 
-    <!-- Quiz Page -->
-    <section id="quiz" class="page hidden">
-      <h2>Quiz Competition</h2>
-      <label>Select Class:</label>
-      <select id="class-select">
-        <option value="10">Class 10</option>
-        <option value="11">Class 11</option>
-        <option value="12">Class 12</option>
-        <option value="upsc">UPSC</option>
-        <option value="other">Other</option>
-      </select>
-      <button onclick="startQuiz()">Start Quiz</button>
-      <div id="quiz-container" class="hidden"></div>
-    </section>
+  <!-- Books Section -->
+  <section id="books">
+    <h2>Books</h2>
+    <h3>Telugu Packs</h3>
+    <ul>
+      <li>Basic Pack - $45</li>
+      <li>Medium Pack - $50</li>
+      <li>Golden Pack - $65</li>
+    </ul>
+    <h3>Maths Packs</h3>
+    <ul>
+      <li>Basic Pack - $45</li>
+      <li>Silver Pack - $50</li>
+      <li>Golden Pack - $60</li>
+    </ul>
+  </section>
 
-    <!-- Redeem Page -->
-    <section id="redeem" class="page hidden">
-      <h2>Redeem Stars</h2>
-      <p>Your Stars: <span id="stars-count">0</span></p>
-      <p>1 Star = ₹0.5</p>
-      <button onclick="redeem('money')">Redeem as Money</button>
-      <button onclick="redeem('voucher')">Redeem as Voucher</button>
-    </section>
-
-    <!-- Profile Page -->
-    <section id="profile" class="page hidden">
-      <h2>Profile</h2>
-      <div class="profile-info">
-        <img src="profile-pic.png" alt="Profile Picture" />
-        <p>Name: John Doe</p>
-        <p>Class: 12</p>
-        <p>Email: johndoe@example.com</p>
-      </div>
-    </section>
-  </main>
+  <!-- Profile Section -->
+  <section id="profile">
+    <h2>Your Profile</h2>
+    <form id="profileForm">
+      <label>Name: </label>
+      <input type="text" id="name" placeholder="Enter Name" required />
+      <label>Standard Level: </label>
+      <input type="text" id="standard" placeholder="Enter Level" required />
+      <label>Performance Level: </label>
+      <input type="text" id="performance" placeholder="Performance Level" required />
+      <button type="submit">Save</button>
+    </form>
+  </section>
 
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
