@@ -1,87 +1,70 @@
-/* General Reset */
-* {
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body */
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-}
-
-/* Header */
 header {
-  padding: 1rem;
-  background: #007bff;
-  color: white;
-  text-align: center;
-}
-
-/* Navigation Menu */
-.menu {
   display: flex;
-  justify-content: space-around;
-  background: #333;
-  padding: 0.5rem 0;
-}
-
-.menu a {
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #4CAF50;
   color: white;
-  text-decoration: none;
-  padding: 0.5rem 1rem;
 }
 
-.menu a:hover {
-  background: #555;
-  border-radius: 5px;
+.logo {
+  font-size: 24px;
+  font-weight: bold;
 }
 
-/* Pages */
-.page {
-  padding: 2rem;
-}
-
-.hidden {
-  display: none;
-}
-
-/* Categories */
-.categories {
-  list-style: none;
-  padding: 1rem 0;
-}
-
-.categories li {
-  padding: 0.5rem;
-  border: 1px solid #ddd;
-  margin: 0.5rem 0;
-}
-
-/* Profile */
-.profile-info img {
-  width: 100px;
-  height: 100px;
+.profile-pic img {
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
 }
 
-.profile-info p {
-  margin: 0.5rem 0;
+section {
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
 }
 
-/* Buttons */
+h1, h2 {
+  color: #4CAF50;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 10px 0;
+}
+
 button {
-  padding: 0.5rem 1rem;
-  margin: 0.5rem;
-  background: #28a745;
+  padding: 10px 20px;
+  background-color: #4CAF50;
   color: white;
   border: none;
   cursor: pointer;
 }
 
 button:hover {
-  background: #218838;
+  background-color: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+
+  .profile-pic img {
+    margin-top: 10px;
+  }
 }
 
 
