@@ -3,68 +3,96 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  background-color: #f4f4f4;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #333;
   padding: 10px 20px;
-  background-color: #4CAF50;
-  color: white;
 }
 
-.logo {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.profile-pic img {
-  width: 50px;
+.logo img {
   height: 50px;
+}
+
+.user-profile img {
+  height: 40px;
   border-radius: 50%;
 }
 
-section {
-  padding: 20px;
-  border-bottom: 1px solid #ccc;
+nav {
+  background-color: #444;
+  padding: 10px;
 }
 
-h1, h2 {
-  color: #4CAF50;
-}
-
-ul {
-  list-style-type: none;
+nav ul {
+  list-style: none;
+  margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: space-around;
 }
 
-ul li {
-  margin: 10px 0;
-}
-
-button {
-  padding: 10px 20px;
-  background-color: #4CAF50;
+nav ul li a {
   color: white;
-  border: none;
-  cursor: pointer;
+  text-decoration: none;
 }
 
-button:hover {
-  background-color: #45a049;
+nav ul li a.active {
+  color: #4CAF50;
+  font-weight: bold;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-  }
-
-  .profile-pic img {
-    margin-top: 10px;
-  }
+main {
+  padding: 20px;
 }
 
+.content-section {
+  display: none;
+}
 
+.content-section.active {
+  display: block;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.reviews {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.review {
+  background-color: white;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 30%;
+}
+
+.pack {
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer a {
+  color: #4CAF50;
+  text-decoration: none;
+}
