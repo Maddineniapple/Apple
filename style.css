@@ -1,4 +1,4 @@
-/body {
+body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -8,23 +8,22 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #4CAF50;
+    background-color: #333;
     color: white;
     padding: 10px 20px;
 }
 
-nav {
-    background-color: #333;
+.logo img {
+    height: 50px;
 }
 
 nav ul {
-    list-style-type: none;
-    padding: 0;
+    list-style: none;
+    display: flex;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 20px;
+    margin-left: 20px;
 }
 
 nav ul li a {
@@ -32,28 +31,53 @@ nav ul li a {
     text-decoration: none;
 }
 
+.profile-pic img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
 main {
     padding: 20px;
 }
 
-h2 {
-    color: #4CAF50;
+section {
+    margin-bottom: 40px;
 }
 
 .reviews {
-    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
 }
 
-.contact {
-    margin-top: 20px;
+.review {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.subscription-type {
+    margin-bottom: 40px;
+}
+
+.pack {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.class {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 footer {
-    text-align: center;
-    padding: 10px;
     background-color: #333;
     color: white;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    text-align: center;
+    padding: 10px 20px;
 }
