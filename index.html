@@ -1,78 +1,113 @@
-        <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NXTGEN - Learn Your Mother Tongue</title>
+    <title>NXTGEN</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <div class="logo">
-            <h1>NXTGEN</h1>
+            <img src="nxtgen-logo.png" alt="NXTGEN Logo">
         </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#subscriptions">Subscriptions</a></li>
+                <li><a href="#classes">Classes</a></li>
+                <li><a href="#profile">Profile</a></li>
+            </ul>
+        </nav>
         <div class="profile-pic">
-            <img src="profile-pic-placeholder.png" alt="Profile Picture">
+            <img src="user-profile.jpg" alt="User Profile Picture">
         </div>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#subscriptions">Subscriptions</a></li>
-            <li><a href="#classes">Classes</a></li>
-            <li><a href="#profile">Profile</a></li>
-        </ul>
-    </nav>
-
     <main>
         <section id="home">
-            <h2>Welcome to NXTGEN</h2>
-            <p>NXTGEN is an online platform where teachers from India connect with children abroad to help them learn their mother tongue.</p>
-            <h3>Reviews</h3>
+            <h1>Welcome to NXTGEN</h1>
+            <p>Connect with children abroad and teach them their mother tongue.</p>
+            <h2>What We Offer</h2>
+            <p>Our platform connects teachers from India with children abroad to learn their mother tongue languages.</p>
+            <h2>Reviews</h2>
             <div class="reviews">
-                <p>"NXTGEN has helped me connect with my roots!" - Student A</p>
-                <p>"The classes are engaging and fun!" - Student B</p>
-            </div>
-            <div class="contact">
-                <h3>Contact Us</h3>
-                <p>WhatsApp: <a href="https://wa.me/919014248652">9014 248652</a></p>
-                <p>Email: <a href="mailto:nxtgeninstitute045@gmail.com">nxtgeninstitute045@gmail.com</a></p>
+                <div class="review">
+                    <p>"Thank you for helping me learn Telugu. It has been a great experience!"</p>
+                    <p>- John Doe, USA</p>
+                </div>
+                <div class="review">
+                    <p>"Learning maths has been much easier with your help. Thank you!"</p>
+                    <p>- Jane Smith, UK</p>
+                </div>
             </div>
         </section>
 
         <section id="subscriptions">
-            <h2>Subscriptions</h2>
-            <h3>Telugu</h3>
-            <ul>
-                <li>Basic Pack: $60 - 3 classes/week</li>
-                <li>Silver Pack: $75 - 4 classes/week</li>
-                <li>Golden Pack: $85 - 5 classes/week</li>
-            </ul>
-            <h3>Maths</h3>
-            <ul>
-                <li>Basic Pack: $60 - 4 classes/week</li>
-                <li>Golden Pack: $85 - 5 classes/week</li>
-            </ul>
+            <h1>Subscriptions</h1>
+            <div class="subscription-type">
+                <h2>Telugu</h2>
+                <div class="pack">
+                    <h3>Basic Pack</h3>
+                    <p>$60/month</p>
+                    <p>3 weekly classes</p>
+                </div>
+                <div class="pack">
+                    <h3>Silver Pack</h3>
+                    <p>$75/month</p>
+                    <p>4 weekly classes</p>
+                </div>
+                <div class="pack">
+                    <h3>Golden Pack</h3>
+                    <p>$85/month</p>
+                    <p>5 weekly classes</p>
+                </div>
+            </div>
+            <div class="subscription-type">
+                <h2>Maths</h2>
+                <div class="pack">
+                    <h3>Basic Pack</h3>
+                    <p>$60/month</p>
+                    <p>3 weekly classes</p>
+                </div>
+                <div class="pack">
+                    <h3>Golden Pack</h3>
+                    <p>$85/month</p>
+                    <p>5 weekly classes</p>
+                </div>
+            </div>
         </section>
 
         <section id="classes">
-            <h2>Upcoming Classes</h2>
-            <p>Check back for the latest class schedules!</p>
+            <h1>Upcoming Classes</h1>
+            <div class="class">
+                <h2>Telugu Class</h2>
+                <p>Date: 2023-10-01</p>
+                <p>Time: 10:00 AM</p>
+            </div>
+            <div class="class">
+                <h2>Maths Class</h2>
+                <p>Date: 2023-10-02</p>
+                <p>Time: 2:00 PM</p>
+            </div>
         </section>
 
         <section id="profile">
-            <h2>Your Profile</h2>
-            <p>Name: [Student Name]</p>
-            <p>Location: [Student Location]</p>
-            <p>Classes Attended: [Number of Classes]</p>
-            <p>Age: [Student Age]</p>
-            <p>Other Information: [Additional Info]</p>
+            <h1>User Profile</h1>
+            <p>Name: John Doe</p>
+            <p>From: USA</p>
+            <p>Age: 10</p>
+            <p>Classes Attended: 10</p>
+            <p>Language: Telugu</p>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2023 NXTGEN Institute. All rights reserved.</p>
+        <p>Contact Us:</p>
+        <p>WhatsApp: +91 9014 248652</p>
+        <p>Email: nxtgeninstitute045@gmail.com</p>
     </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
